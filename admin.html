@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add New Event | Admin</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- SweetAlert2 for custom alerts -->
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.26/dist/sweetalert2.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url('images/college_background.jpeg'); /* Path to your background image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin-top: 50px;
+    }
+
+    .form-box {
+      background: rgba(255, 255, 255, 0.7); /* Reduced opacity for form */
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .form-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+      color: #FF6F61;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .form-control {
+      border-radius: 8px;
+      padding: 15px;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .form-control:focus {
+      border-color: #FF6F61;
+      box-shadow: 0 0 5px rgba(255, 111, 97, 0.8);
+    }
+
+    .upload-btn {
+      font-size: 1rem;
+      color: #fff;
+      background-color: #FF6F61;
+      border: none;
+      border-radius: 8px;
+      padding: 10px;
+      cursor: pointer;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .upload-btn:hover {
+      background-color: #ff3d29;
+    }
+
+    .college-logo {
+      width: 120px;
+      display: block;
+      margin: 20px auto;
+      animation: zoomIn 1s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-box">
+      <!-- Logo placed inside the form box -->
+      <img src="images/college_logo.png" alt="College Logo" class="college-logo">
+
+      <h3 class="form-title">Add New Event</h3>
+
+      <form action="add_event.php" method="post" id="eventForm">
+        <div class="form-group">
+          <input type="text" name="title" class="form-control" placeholder="Event Name" required>
+        </div>
+        <div class="form-group">
+          <textarea name="description" class="form-control" placeholder="Event Description" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <input type="date" name="event_date" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="venue" class="form-control" placeholder="Event Venue" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="image_path" class="form-control" placeholder="Image Path (e.g., images/event1.jpg)" required>
+        </div>
+      
+        <div class="d-grid gap-2">
+          <button type="submit" class="upload-btn">Add Event</button>
+        </div>
+      </form>
+      
+    </div>
+  </div>
+
+  <!-- SweetAlert2 Script -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.26/dist/sweetalert2.min.js"></script>
+
+  <script>
+    // Form submit event handler
+    document.getElementById('eventForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Show SweetAlert for confirmation
+      Swal.fire({
+        title: 'Are you sure?',
+        text: 'Do you want to add this event?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#FF6F61',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, add it!',
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Proceed with form submission
+          this.submit(); // If confirmed, submit the form
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
