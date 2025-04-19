@@ -40,7 +40,7 @@ A simple and user-friendly Event Portal built using **PHP** and **MySQL**. This 
 ### 🔸 User Dashboard
 ![Admin Panel](screenshots/user_page.png)
 
-### 🔸 Ticket Example
+### 🔸 Ticket Pdf sample
 ![Ticket](screenshots/ticket.png)
 
 ---
