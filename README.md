@@ -51,16 +51,12 @@ A simple and user-friendly Event Portal built using **PHP** and **MySQL**. This 
 
 ## 🖼️ Screenshots
 
-> Replace the links below with actual image paths from your project or hosted image URLs.
-
-### 🔸 Homepage
-![Homepage](screenshots/homepage.png)
-
-### 🔸 Registration Page
-![Registration](screenshots/registration.png)
 
 ### 🔸 Admin Dashboard
-![Admin Panel](screenshots/admin-dashboard.png)
+![Registration](screenshots/admin_page.png)
+
+### 🔸 User Dashboard
+![Admin Panel](screenshots/user_page.png)
 
 ### 🔸 Ticket Example
 ![Ticket](screenshots/ticket.png)
