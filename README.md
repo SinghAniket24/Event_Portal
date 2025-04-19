@@ -27,6 +27,25 @@ A simple and user-friendly Event Portal built using **PHP** and **MySQL**. This 
 
 ---
 
+
+
+---
+
+## 🖼️ Screenshots
+
+
+### 🔸 Admin Dashboard
+![Registration](screenshots/admin_page.png)
+
+### 🔸 User Dashboard
+![Admin Panel](screenshots/user_page.png)
+
+### 🔸 Ticket Example
+![Ticket](screenshots/ticket.png)
+
+---
+
+
 ## 🚀 Getting Started
 
 1. **Clone the Repository**  
@@ -46,22 +65,6 @@ A simple and user-friendly Event Portal built using **PHP** and **MySQL**. This 
    - Place the project folder in your local server directory (`htdocs` for XAMPP)  
    - Start Apache & MySQL from your local server  
    - Open `localhost/event-portal` in your browser
-
----
-
-## 🖼️ Screenshots
-
-
-### 🔸 Admin Dashboard
-![Registration](screenshots/admin_page.png)
-
-### 🔸 User Dashboard
-![Admin Panel](screenshots/user_page.png)
-
-### 🔸 Ticket Example
-![Ticket](screenshots/ticket.png)
-
----
 
 ## 📩 Contact
 
