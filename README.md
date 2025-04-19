@@ -1,67 +1,73 @@
-# 🎫 **Event Portal Project**  
-![PHP](https://img.shields.io/badge/Backend-PHP-777BB4?logo=php&logoColor=white&style=for-the-badge)
-![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge)
-![HTML](https://img.shields.io/badge/Frontend-HTML-orange?logo=html5&logoColor=white&style=for-the-badge)
-![CSS](https://img.shields.io/badge/Styles-CSS-blue?logo=css3&logoColor=white&style=for-the-badge)
+# 🎫 Event Portal Project
 
-> 🎟️ A simple, responsive, and user-friendly **Event Portal** built with **PHP** and **MySQL**. This platform empowers users to browse, register, and instantly get tickets to exciting events. It also features a secure admin dashboard for easy event and registration management.
+A simple and user-friendly Event Portal built using **PHP** and **MySQL**. This platform allows users to browse events, register for them, and download a ticket after successful registration. It also includes a secure admin panel to manage events and view participant details.
 
 ---
 
-## 💡 **Core Features**
+## 💡 Features
 
-### 👤 **User Panel**
-- 🔍 Browse upcoming events with details  
-- 📝 Register easily with a simple form  
-- 📥 Download ticket instantly after registration  
+### 👥 Users:
+- View a list of upcoming events
+- Register for events using a simple form
+- Instantly download a ticket after registering
 
-<p align="center">
-  <img src="https://img.icons8.com/fluency/96/calendar.png" width="80"/>
-  <img src="https://img.icons8.com/color/96/add-user-group-man-man.png" width="80"/>
-  <img src="https://img.icons8.com/fluency/96/ticket-confirmed.png" width="80"/>
-</p>
-
----
-
-### 🛡 **Admin Panel**
-- 🔐 Password-protected admin access  
-- ➕ Add / ✏️ Edit / ❌ Delete events  
-- 📋 View all registered participants  
-- 📊 Track event registrations and participation  
-
-<p align="center">
-  <img src="https://img.icons8.com/fluency/96/lock.png" width="80"/>
-  <img src="https://img.icons8.com/color/96/task.png" width="80"/>
-  <img src="https://img.icons8.com/color/96/group.png" width="80"/>
-</p>
+### 🛠 Admins:
+- Password-protected admin panel for secure access
+- Add, edit, and delete events
+- View and manage all registrations
+- Monitor event participation easily
 
 ---
 
-## 🧰 **Tech Stack**
+## 🧰 Tech Stack
 
-| Layer     | Technology |
-|-----------|------------|
-| 🖼 Frontend | `HTML`, `CSS` |
-| ⚙️ Backend  | `PHP` |
-| 💾 Database | `MySQL` |
-
-<p align="center">
-  <img src="https://img.icons8.com/color/96/php.png" width="60"/>
-  <img src="https://img.icons8.com/color/96/mysql-logo.png" width="60"/>
-  <img src="https://img.icons8.com/color/96/html-5--v1.png" width="60"/>
-  <img src="https://img.icons8.com/color/96/css3.png" width="60"/>
-</p>
+- **Frontend**: HTML, CSS  
+- **Backend**: PHP  
+- **Database**: MySQL  
 
 ---
 
-## 📷 **Preview Screenshots**
+## 🚀 Getting Started
 
-> _(Insert screenshots of User Homepage, Registration Form, Admin Panel, Ticket Download, etc.)_
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/your-username/event-portal.git
+   ```
+
+2. **Import the Database**  
+   - Open `phpMyAdmin` or any MySQL client  
+   - Import the provided `.sql` file into a new database
+
+3. **Configure Database**  
+   - Open `config.php`  
+   - Add your MySQL `username`, `password`, and `database name`
+
+4. **Run Locally**  
+   - Place the project folder in your local server directory (`htdocs` for XAMPP)  
+   - Start Apache & MySQL from your local server  
+   - Open `localhost/event-portal` in your browser
 
 ---
 
-## 📩 **Contact**
+## 🖼️ Screenshots
 
-**👤 Aniket H. Singh**  
-📧 [aniket.singh.st1@gmail.com](mailto:aniket.singh.st1@gmail.com)  
-🌐 [Portfolio Website](https://singhaniket24.github.io/resume_db/)
+> Replace the links below with actual image paths from your project or hosted image URLs.
+
+### 🔸 Homepage
+![Homepage](screenshots/homepage.png)
+
+### 🔸 Registration Page
+![Registration](screenshots/registration.png)
+
+### 🔸 Admin Dashboard
+![Admin Panel](screenshots/admin-dashboard.png)
+
+### 🔸 Ticket Example
+![Ticket](screenshots/ticket.png)
+
+---
+
+## 📩 Contact
+
+**Aniket H. Singh**  
+📧 [aniket.singh.st1@gmail.com](mailto:aniket.singh.st1@gmail.com)
