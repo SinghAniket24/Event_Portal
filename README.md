@@ -46,26 +46,6 @@ A simple and user-friendly Event Portal built using **PHP** and **MySQL**. This 
 ---
 
 
-## 🚀 Getting Started
-
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/your-username/event-portal.git
-   ```
-
-2. **Import the Database**  
-   - Open `phpMyAdmin` or any MySQL client  
-   - Import the provided `.sql` file into a new database
-
-3. **Configure Database**  
-   - Open `config.php`  
-   - Add your MySQL `username`, `password`, and `database name`
-
-4. **Run Locally**  
-   - Place the project folder in your local server directory (`htdocs` for XAMPP)  
-   - Start Apache & MySQL from your local server  
-   - Open `localhost/event-portal` in your browser
-
 ## 📩 Contact
 
 **Aniket H. Singh**  
